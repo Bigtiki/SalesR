@@ -5,21 +5,7 @@ import java.util.Scanner;
 public class Print{
 	
 	
-	
-	
-public static void printLine(int H) {
-	
-	int x, y;
-	for(x=0;x<=H;x++){
-		
-		for(y=1;y<=x;y++) {
-			if (y==x) {
-			System.out.print(y+".");}else {System.out.print(y+",");}
-		}
-		System.out.println();
-	}
-}
-public static void main(String[]args) {
+public static void reProgram() {
 	System.out.println("Write a good number:");
 	int H;
 	boolean result;
@@ -39,6 +25,23 @@ public static void main(String[]args) {
 			result=false;
 	}}while(!result);
 	
+}
+	
+public static void printLine(int H) {
+	
+	int x, y;
+	for(x=0;x<=H;x++){
+		
+		for(y=1;y<=x;y++) {
+			if (y==x) {
+			System.out.print(y+".");}else {System.out.print(y+",");}
+		}
+		System.out.println();
+	}
+}
+public static void main(String[]args) {
+	
+	reProgram();
 	
 }
 }
