@@ -13,8 +13,8 @@ public static void printLine(int H) {
 	for(x=0;x<=H;x++){
 		
 		for(y=1;y<=x;y++) {
-			
-			System.out.print(y+" ");
+			if (y==x) {
+			System.out.print(y+".");}else {System.out.print(y+",");}
 		}
 		System.out.println();
 	}
